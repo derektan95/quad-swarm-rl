@@ -41,6 +41,10 @@ Clone and install this repo as an editable Pip package:
 git clone https://github.com/alex-petrenko/quad-swarm-rl
 cd quad-swarm-rl
 pip install -e .
+
+# UNDOCUMENTED DEPENDENCIES
+conda install -c conda-forge pyglet
+pip3 install torch==1.10.0+cu113 torchvision==0.11.1+cu113 torchaudio==0.10.0+cu113 -f https://download.pytorch.org/whl/cu113/torch_stable.html
 ```
 
 This should pull and install all the necessary dependencies, including Sample Factory and PyTorch.
