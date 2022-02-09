@@ -42,7 +42,7 @@ git clone https://github.com/alex-petrenko/quad-swarm-rl
 cd quad-swarm-rl
 pip install -e .
 
-# UNDOCUMENTED DEPENDENCIES
+# UNDOCUMENTED DEPENDENCIES (./run_tests.sh to detect more dependencies)
 conda install -c conda-forge pyglet
 pip3 install torch==1.10.0+cu113 torchvision==0.11.1+cu113 torchaudio==0.10.0+cu113 -f https://download.pytorch.org/whl/cu113/torch_stable.html
 ```
@@ -98,6 +98,9 @@ To test the trained model, run the following command:
 
 ```
 python -m swarm_rl.enjoy --algo=APPO --env=quadrotor_multi --replay_buffer_sample_prob=0 --continuous_actions_sample=False --quads_use_numba=False --train_dir=PATH_TO_PROJECT/swarm_rl/train_dir --experiments_root=EXPERIMENT_ROOT --experiment=EXPERIMENT_NAME
+
+# For example (default output directory by running python -m sample_factory.runner.run)
+python -m swarm_rl.enjoy --algo=APPO --env=quadrotor_multi --replay_buffer_sample_prob=0 --continuous_actions_sample=False --quads_use_numba=False --train_dir=/home/common/catkin_ws/src/quad-swarm-rl/train_dir --experiments_root=paper_quads_multi_mix_baseline_8a_attn_v116 --experiment=quad_mix_baseline-8_mixed_attn_/00_quad_mix_baseline-8_mixed_attn_q.n.e.typ_attention_see_0
 ```
 
 ## Unit Tests

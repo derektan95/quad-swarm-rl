@@ -12,4 +12,5 @@ _results
 *.wpr
 *.cprof
 *.egg-info/
-train_dir/
+#train_dir/
+

@@ -1,0 +1,6 @@
+diff --git a/src/ego-planner-swarm b/src/ego-planner-swarm
+--- a/src/ego-planner-swarm
++++ b/src/ego-planner-swarm
+@@ -1 +1 @@
+-Subproject commit a093685365272a41ee8bff867f54abf10f074747
++Subproject commit a093685365272a41ee8bff867f54abf10f074747-dirty
